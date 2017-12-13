@@ -41,7 +41,7 @@ public class Calculator1 extends Base {
                 System.out.printf("%.4f", multiplication());
                 break;
             case 4:
-                System.out.printf("%.4f", divicion());
+                System.out.printf("%.4f", division());
                 break;
             default:
                 System.out.println("Неправильное значение операции, перезапустите программу");
@@ -64,7 +64,7 @@ public class Calculator1 extends Base {
     }
 
     //Описание процесса деления
-    public float divicion() {
+    public float division() {
         return firstNum / secondNum;
     }
 }
