@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -24,7 +23,6 @@ public class Calculator1 extends Base{
 
     //вызов консоли для выбора операции
     public void operationInput(){
-        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите цифру, соответствующую желаемой операции");
         System.out.println("1 - Сложение");
         System.out.println("2 - Вычитание");
