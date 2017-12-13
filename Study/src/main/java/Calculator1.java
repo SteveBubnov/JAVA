@@ -9,7 +9,7 @@ public class Calculator1 extends Base {
     int operation;
     Scanner scanner = new Scanner(System.in);
 
-    //вызов консоли для ввода чисел
+    //Работа в консоли для ввода чисел
     public void numberInput() {
 
         System.out.println("Введите первое число");
@@ -18,7 +18,7 @@ public class Calculator1 extends Base {
         secondNum = scanner.nextFloat();
     }
 
-    //вызов консоли для выбора операции
+    //Работа в консол для выбора операции
     public void operationInput() {
         System.out.println("Введите цифру, соответствующую желаемой операции");
         System.out.println("1 - Сложение");
