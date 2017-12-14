@@ -23,7 +23,7 @@ public class Base {
     //Вызов калькулятора
     private static void calculator() {
         Calculator1 calculator1 = new Calculator1();
-        calculator1.numberInput();
+        calculator1.inputNumbers();
         calculator1.operationInput();
         calculator1.calculation();
     }
