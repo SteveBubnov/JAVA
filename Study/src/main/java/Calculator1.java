@@ -1,23 +1,31 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
  * Реализация калькулятора, который работает с дробными числами
  */
-public class Calculator1 {
-    private float firstNum;
-    private float secondNum;
-    private int operation;
+class Calculator1 {
+    private static float firstNum;
+    private static float secondNum;
+    private static int operation;
+
+
+    //Вызов калькулятора
+    static void calculator() {
+        inputNumbers();
+        operationInput();
+        calculation();
+    }
 
     //Вызов консоли ввода чисел
-    public void inputNumbers() {
+    private static void inputNumbers() {
         System.out.println("Введите первое дробное число");
         firstNum = numberInput();
         System.out.println("Введите второе дробное число");
         secondNum = numberInput();
     }
+
     // метод ввода чисел
-    private float numberInput() {
+    private static float numberInput() {
         float number;
         while (true) {
             try {
@@ -32,7 +40,7 @@ public class Calculator1 {
     }
 
     //вызов консоли для выбора операции
-    public void operationInput() {
+    private static void operationInput() {
         while (true) {
             try {
                 Scanner scanner = new Scanner(System.in);
@@ -50,7 +58,7 @@ public class Calculator1 {
     }
 
     //результат
-    public void calculation() {
+    private static void calculation() {
         while (true) {
             try {
                 switch (operation) {
@@ -83,22 +91,22 @@ public class Calculator1 {
     }
 
     //Описание процесса сложения
-    private float addition() {
+    private static float addition() {
         return firstNum + secondNum;
     }
 
     //Описание процесса вычитания
-    private float subtraction() {
+    private static float subtraction() {
         return firstNum - secondNum;
     }
 
     //Описание процесса умножения
-    private float multiplication() {
+    private static float multiplication() {
         return firstNum * secondNum;
     }
 
     //Описание процесса деления
-    private float divicion() {
+    private static float divicion() {
         return firstNum / secondNum;
     }
 
