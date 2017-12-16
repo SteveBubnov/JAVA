@@ -1,5 +1,8 @@
 package Lesson4;
 
+/**
+ * Абстрактный класс сладостей
+ */
 public abstract class Candy {
     private String name;
     private float weight;
