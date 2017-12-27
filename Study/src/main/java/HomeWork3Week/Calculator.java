@@ -56,10 +56,10 @@ public class Calculator {
                 this.operation = new Subtraction();
                 break;
             case 3:
-                this.operation = new Division();
+                this.operation = new Multiplication();
                 break;
             case 4:
-                this.operation = new Multiplication();
+                this.operation = new Division();
                 break;
             default:
                 System.out.println("Некорректная цифра операции.");
